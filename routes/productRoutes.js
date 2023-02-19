@@ -5,6 +5,7 @@ const productRouter=express.Router()
 const app=express()
 const {ProductModel}=require('../model/productModel')
 const jwt = require('jsonwebtoken');
+const { authenticate } = require('../middlewarw/Authentication');
 
 app.use(express.json())
 
